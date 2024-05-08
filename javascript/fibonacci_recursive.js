@@ -1,5 +1,8 @@
 function fibonacci(n) {
-  // type your code here
+  // based on MDN's recursion web doc
+  const fib = (n < 2 ? n : fibonacci(n-1) + fibonacci(n-2))
+  
+  return fib
 }
 
 if (require.main === module) {
